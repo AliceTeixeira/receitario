@@ -70,7 +70,7 @@ export default function Catalog() {
       <section className="filters">
         <input
           type="text"
-          placeholder="Buscar receita pelo nome..."
+         placeholder="Digite o nome de uma receita..."
           aria-label="Buscar receita pelo nome"
           value={search}
           onChange={event => setSearch(event.target.value)}
