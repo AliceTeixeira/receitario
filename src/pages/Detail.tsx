@@ -87,7 +87,8 @@ export default function Detail() {
 
       <div className="detail-columns">
         <section>
-          <p>Confira os ingredientes necessários para preparar esta receita:</p>
+          <h2>Ingredientes</h2>
+<p>Confira os ingredientes necessários para preparar esta receita:</p>
 
           <ul>
             {recipe.ingredients.map((item, index) => (
