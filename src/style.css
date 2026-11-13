@@ -1,0 +1,295 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #faf9f6;
+  color: #292929;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e26b38;
+}
+
+.main {
+  flex: 1;
+  padding-top: 38px;
+  padding-bottom: 65px;
+}
+
+.footer {
+  text-align: center;
+  background: white;
+  padding: 25px;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.intro h1 {
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.intro p {
+  color: #777;
+}
+
+.favorites-count {
+  background: #fff0e8;
+  color: #d35e30;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.filters input,
+.filters select {
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  font-size: 15px;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 0;
+}
+
+.filters select {
+  width: 230px;
+}
+
+.results {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.card img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.category {
+  font-size: 12px;
+  color: #df703e;
+  background: #fff0e8;
+  padding: 5px 9px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 45px;
+}
+
+.card-title:hover,
+.back:hover {
+  color: #df703e;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #777;
+  margin-top: 12px;
+}
+
+.heart {
+  border: 0;
+  background: #fff0e8;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  font-size: 26px;
+  color: #df703e;
+  cursor: pointer;
+}
+
+.heart.active {
+  background: #df703e;
+  color: white;
+}
+
+.detail {
+  max-width: 900px;
+  margin: auto;
+}
+
+.back {
+  color: #df703e;
+}
+
+.detail h1 {
+  margin-bottom: 8px;
+}
+
+.detail > p {
+  color: #777;
+}
+
+.detail-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-top: 15px;
+}
+
+.times {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 18px;
+  background: white;
+  border-radius: 10px;
+}
+
+.times span {
+  flex: 1;
+  min-width: 150px;
+}
+
+.detail-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 30px;
+}
+
+.detail-columns section {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+}
+
+.detail-columns li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.message {
+  text-align: center;
+  padding: 65px 10px;
+}
+
+.button {
+  display: inline-block;
+  background: #df703e;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .detail-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters select {
+    width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 25px;
+  }
+}
