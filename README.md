@@ -11,7 +11,7 @@ O projeto conta com uma interface simples e intuitiva, oferecendo funcionalidade
 
 ## ⚙️ Funcionalidades
 
-- 🍽️ **Catálogo de receitas:** listagem com imagens, nomes e tempo de preparo.
+- 🍽️ **Catálogo de receitas:** listagem com imagens, nomes, culinária e tempo total.
 - 🔎 **Pesquisa:** busca de receitas pelo nome.
 - 🌎 **Filtros:** seleção de receitas por tipo de culinária.
 - ❤️ **Favoritos:** opção de favoritar receitas com contador.
@@ -30,12 +30,22 @@ O projeto conta com uma interface simples e intuitiva, oferecendo funcionalidade
 
 ## 🌐 Acesse o projeto
 
-**Site publicado:** https://receitario-fiap-cp5.vercel.app
+**Site publicado:**
 
-**Repositório:** https://github.com/AliceTeixeira/receitario
+https://receitario-fiap-cp5.vercel.app
+
+**Repositório:**
+
+https://github.com/AliceTeixeira/receitario
+
+## 📸 Tela do catálogo
+
+![Tela inicial do Receitário](./public/catalogo.png)
 
 ## 👥 Integrante
 
 - Alice Teixeira Caldeira — RM556293
 
+## 🎓 Instituição
 
+FIAP — Frontend | Checkpoint 5
